@@ -1,14 +1,88 @@
-h1 {
-    text-align: center;
-    font-family: "Helvetica Neue", sans-serif;
-    font-weight: bold;
-}
-
 * {
     font-family: "Helvetica Neue", sans-serif;
 }
 
-body {
-    background-color: black;
-    color: white;
+/* body {
+    background-color: #77dd77;
+} */
+
+.navbar {
+    background-color: green;
 }
+.nav-item a {
+    font-weight: bold;
+}
+
+
+.btn-primary {
+    font-weight: bold;
+}
+
+.texint {
+    text-align: center;
+    font-weight: bold;
+    /* font-variant: small-caps; */
+}
+
+.texcentro {
+    text-align: center;
+}
+
+.iconsi {
+    width: auto;
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.featured {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#eleicons {
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: auto;
+}
+
+.copy {
+    text-align: center;
+}
+
+/* lugares */
+
+/* .col card{
+    margin-top: 50%;
+    margin-bottom: 50%;
+} */
+
+.overlay {
+       display: none;
+       position: fixed;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       background-color: rgba(0, 0, 0, 0.8);
+       z-index: 999;
+       justify-content: center;
+       align-items: center;
+   }
+
+   .overlay-content {
+       background-color: #fff;
+       padding: 20px;
+       border-radius: 10px;
+   }
+
+   .close-btn {
+       position: absolute;
+       top: 10px;
+       right: 10px;
+       background-color: transparent;
+       border: none;
+       cursor: pointer;
+   }
