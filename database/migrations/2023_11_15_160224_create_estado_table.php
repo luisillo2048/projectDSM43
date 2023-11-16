@@ -11,9 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('lugares_controllers', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+        Schema::create('estado', function (Blueprint $table) {
+            $table->id('id_estado');
+            $table->string('estado');
         });
     }
 
@@ -22,6 +22,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('lugares_controllers');
+        Schema::dropIfExists('estado');
     }
 };
