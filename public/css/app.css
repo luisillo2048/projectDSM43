@@ -86,3 +86,28 @@
        border: none;
        cursor: pointer;
    }
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////*/
+   .gradient-custom-2 {
+    /* fallback for old browsers */
+    background: black;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, #24ee67, #24917f, rgb(40, 143, 91), #21633a);
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #24ee67, #24917f, rgb(40, 143, 91), #21633a);
+    }
+    
+    @media (min-width: 768px) {
+    .gradient-form {
+    height: 150vh !important;
+    }
+    }
+    @media (min-width: 769px) {
+    .gradient-custom-2 {
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    }
+    }

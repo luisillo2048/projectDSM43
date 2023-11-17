@@ -33,7 +33,7 @@
 
                     <br><br>
                     <div class="nav-item text-end">
-                        <a class="btn btn-primary" href="#" role="button">Iniciar sesión</a>
+                        <a class="btn btn-primary" href="{{ route('passwords.login') }}" role="button">Iniciar n</a>
                         <a class="btn btn-primary" href="#" role="button">Registrarse</a>
                     </div>
                 </div>
