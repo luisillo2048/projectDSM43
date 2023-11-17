@@ -2,21 +2,28 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js" integrity="sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <title>Documento</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 <body>
+
+<div class="container mt-5">
   <div class="card">
-    <div class="card-header">
-      <span class="position-absolute top-0 start-100 translate-middle"><button onclick="ocultarDetalles()" type="button" class="btn btn-success">&#215;</button></span>
-    </div>
+    <img src="{{ asset('img/600x400.png') }}" class="card-img-top" alt="Imagen del lugar">
     <div class="card-body">
-      <h5 class="card-title">{{Nombre del sitio}}</h5>
-      <p class="card-text">{{Breve descripción}}</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+      <h5 class="card-title">Nombre del Lugar</h5>
+      <p class="card-text">Descripción del lugar</p>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item"><strong>Dirección:</strong> Dirección del lugar</li>
+        <li class="list-group-item"><strong>Teléfono:</strong> Número de teléfono</li>
+        <li class="list-group-item"><strong>Horario:</strong> Horario de atención</li>
+      </ul>
     </div>
   </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>
