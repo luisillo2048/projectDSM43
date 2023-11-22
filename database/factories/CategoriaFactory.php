@@ -4,15 +4,11 @@ namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-use App\Models\LugarModel;
-
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Model>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Categoria>
  */
-class ProductFactory extends Factory
+class CategoriaFactory extends Factory
 {
-
-    protected $model =  LugarModel::class;
     /**
      * Define the model's default state.
      *

@@ -4,15 +4,16 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use App\Models\LugarModel;
+use App\Models\Categoria;
 
-class ProductSeeder extends Seeder
+class CategoriaSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-         LugarModel::factory()->count(10)->create();
+        Categoria::factory()->count(10)->create();
     }
+    
 }
