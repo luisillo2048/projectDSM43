@@ -1,0 +1,124 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "API lugares ",
+        "description": "Se mostraran diferentes acciones a relaizar",
+        "contact": {
+            "name": "Yosimar Alejandro Gomez ",
+            "email": "alexandrorick7@gmail.com"
+        },
+        "license": {
+            "name": "Licencia",
+            "url": "Apache"
+        },
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/api/categoria": {
+            "get": {
+                "tags": [
+                    "Categoria"
+                ],
+                "operationId": "fb7dad2e0d06df3215f26d4f4b8999b4",
+                "responses": {
+                    "200": {
+                        "description": "mostrar todos los productos"
+                    },
+                    "default": {
+                        "description": "ha ocurrido un error."
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Categoria"
+                ],
+                "summary": "Registrar la información de una categoria",
+                "operationId": "2d789ab21ff37b79639c39c8d2c63a3c",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "categoria": {
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "CREATED",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "id": {
+                                            "type": "number",
+                                            "example": 1
+                                        },
+                                        "categoria": {
+                                            "type": "string",
+                                            "example": "Xona"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "UNPROCESSABLE CONTENT",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "type": "string",
+                                            "example": "The apellidos field is required."
+                                        },
+                                        "errors": {
+                                            "type": "string",
+                                            "example": "Objeto de errores"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/categoria/{id_categoria}": {
+            "get": {
+                "tags": [
+                    "Categoria"
+                ],
+                "summary": "Obtener el producto por identificador",
+                "description": "Obtiene un producto especifico segun su identificador.",
+                "operationId": "cc72fa4d00b8d881d4e6c1f4b923d053",
+                "parameters": [
+                    {
+                        "name": "id_categoria",
+                        "in": "path",
+                        "description": "Identificador unico del producto",
+                        "required": true,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int64"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Producto obtenido exitosamente."
+                    }
+                }
+            }
+        }
+    }
+}

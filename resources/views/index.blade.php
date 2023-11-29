@@ -10,19 +10,20 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="index">Inicio</a>
-            </li>
-            <li class="nav-item dropdown">
+            </li> -->
+            <!-- <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="lugares/index" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Lugares
+              Lugares -->
             </a>
-              <ul class="dropdown-menu">
+            <!--este apartado no se ocupa por q no es un avista principal si o el login-->
+              <!-- <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="lugares/categorias">Categorías</a></li>
                 <li><a class="dropdown-item" href="lugares/municipios">Municipios</a></li>
                 <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" href="lugares/index">Explorar sitios</a></li>
-              </ul>
+              </ul> -->
             </li>
             <li class="nav-item">
               <a class="nav-link" href="foo">Contacto</a>
@@ -36,7 +37,7 @@
           <br><br>
           <div class="nav-item text-end">
             <a class="btn btn-primary" href="{{ route('auth.login') }}" role="button">Iniciar</a>
-            <a class="btn btn-primary" href="#" role="button">Registrarse</a>
+            <a class="btn btn-primary" href="{{ route('') }}" role="button">Registrarse</a>
           </div>        
         </div>       
       </div>

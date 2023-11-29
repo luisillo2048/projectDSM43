@@ -111,3 +111,10 @@
     border-bottom-right-radius: .5rem;
     }
     }
+
+    body {
+        /* Otras propiedades de estilo para tu contenedor */
+        background-image: url('ruta/de/tu/imagen.jpg');
+        background-size: cover; /* Para cubrir completamente el contenedor */
+        background-position: center; /* Para centrar la imagen en el contenedor */
+      } 

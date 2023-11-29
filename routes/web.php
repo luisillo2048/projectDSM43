@@ -21,7 +21,11 @@ Route::get('lugares/index', [LugarController::class, 'index'])->name('lugares.in
 Route::get('lugares/categorias', [LugarController::class, 'categorias'])->name('lugares.categorias');
 Route::get('lugares/municipios', [LugarController::class, 'municipios'])->name('lugares.municipios');
 Route::get('auth/login', [LugarController::class, 'login'])->name('auth.login');
-Route::get('auth/register', [LugarController::class, 'register'])->name('auth.register');
+Route::post('auth/register', [LugarController::class, 'register'])->name('auth.register');
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

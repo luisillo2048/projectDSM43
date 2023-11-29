@@ -10,7 +10,7 @@ class Categoria extends Model
     use HasFactory;
 
     protected $table = "categoria";
-    # protected $id = "id_categoria";
+    protected $id = "id_categoria";
     protected $fillable = ['categoria'];
-    protected $hidden =['created_at','updated_at'];
+    protected $hidden = ['created_at','updated_at'];
 }
