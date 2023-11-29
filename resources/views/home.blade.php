@@ -81,9 +81,9 @@
 
               <p class="texcentro">Insertar</p>
               <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Selecciona una opción
-                    </button>
+                    </a>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                     <!-- Opciones de la lista desplegable -->
                     <a class="dropdown-item" href="#">Opción 1</a>
