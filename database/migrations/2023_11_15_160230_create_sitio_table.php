@@ -14,8 +14,9 @@ return new class extends Migration
         Schema::create('sitio', function (Blueprint $table) {
             $table->id('id_sitio');
             $table->string('nombre');
-            $table->unsignedBigInteger('id_categoria1');
             $table->string('telefono');
+            $table->timestamps();
+            $table->unsignedBigInteger('id_categoria1');
             $table->foreign('id_categoria1')->references('id_categoria')->on('categoria');
         });
     }

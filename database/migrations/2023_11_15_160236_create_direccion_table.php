@@ -15,8 +15,9 @@ return new class extends Migration
             $table->id('id_direccion');
             $table->string('calle');
             $table->integer('num');
-            $table->unsignedBigInteger('id_municipio1');
             $table->string('colonia');
+            $table->timestamps();
+            $table->unsignedBigInteger('id_municipio1');
             $table->unsignedBigInteger('id_estado1');
             $table->unsignedBigInteger('id_sitio1');
             $table->foreign('id_estado1')->references('id_estado')->on('estado');
