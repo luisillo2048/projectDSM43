@@ -20,6 +20,10 @@ class LugarController extends Controller
     {
         return view('lugares.municipios');
     }
+            public function lugares(){
+                return view ('lugares.lugares');
+            }
+
     public function login()
     {
         return view('auth.login');

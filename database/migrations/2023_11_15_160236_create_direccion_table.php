@@ -23,6 +23,7 @@ return new class extends Migration
             $table->foreign('id_estado1')->references('id_estado')->on('estado');
             $table->foreign('id_municipio1')->references('id_municipio')->on('municipio');
             $table->foreign('id_sitio1')->references('id_sitio')->on('sitio');
+            $table->softDeletes();
         });
     }
 

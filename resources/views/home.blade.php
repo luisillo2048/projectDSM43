@@ -34,6 +34,7 @@
              <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="index">Inicio</a>
             </li> 
+          
              <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="lugares/index" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Lugares 
@@ -42,17 +43,22 @@
                 <li><a class="dropdown-item" href="lugares/categorias">Categorías</a></li>
                 <li><a class="dropdown-item" href="lugares/municipios">Municipios</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="lugares/index">Explorar sitios</a></li>
+                <li><a class="dropdown-item" href="lugares/lugares">Explorar sitios</a></li>
               </ul> 
             </li>
             <li class="nav-item">
               <a class="nav-link" href="foo">Contacto</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index">Salir</a>
+            </li> 
           </ul>
+        
           <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
+            <button class="btn btn-primary" type="submit">Search</button>
           </form> 
+          
 
           <br><br>
           <!-- <div class="nav-item text-end">
