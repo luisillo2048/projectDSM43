@@ -1,5 +1,5 @@
 @extends("layouts.layout")
-@section("title", "Explorar lugares por categoría - ILoveTraveling")
+@section("title", "Explorar lugares  - ILoveTraveling")
 @section("content")
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark">
@@ -30,10 +30,12 @@
           </ul>
 
           <br><br>
+
+          <!-- ya no se ocupa
           <div class="nav-item text-end">
             <a class="btn btn-primary" href="#" role="button">Iniciar sesión</a>
             <a class="btn btn-primary" href="#" role="button">Registrarse</a>
-          </div>        
+          </div>         -->
         </div>       
       </div>
     </nav>
@@ -41,7 +43,7 @@
 
   <div class="container-fluid">
     <div class="card bg-dark text-white">
-        <img src="../img/pexels-lara-jameson-8828626.jpg" class="card-img" alt="...">
+        <img src="../img/turista.avif" class="card-img" alt="...">
         <div class="card-img-overlay d-flex flex-column align-items-center justify-content-center texint">
             <h1 class="card-title">Explora por municipio</h5>
         </div>
@@ -59,7 +61,8 @@
                                     <div class="col-md-3 mb-3">
                                         <div class="card">
                                             <img src="{{ asset('img/fff.png') }}" alt="" class="card-img-top">
-                                            <h3>Precio = {{ $categoria->municipio }}</h3>
+                                            <h3>Precio = {{ $categoria->nombre }}</h3>
+                                           
                                          
                                         </div>
                                     </div>
@@ -91,7 +94,7 @@
       <div class="col mb-3">
         <h5><a href="lugares" class="nav-link p-0 text-body-secondary">Lugares</a></h5>
         <ul class="nav flex-column">
-          <li class="nav-item mb-2"> <a href="categorias" class="nav-link p-0 text-body-secondary">Categorías</a></li>
+          <li class="nav-item mb-2"><a href="lugaresCat" class="nav-link p-0 text-body-secondary">Categorías</a></li>
           <li class="nav-item mb-2"><a href="municipios" class="nav-link p-0 text-body-secondary">Municipios</a></li>
           <li class="nav-item mb-2"><a href="lugares" class="nav-link p-0 text-body-secondary">Explorar sitios</a></li>
         </ul>

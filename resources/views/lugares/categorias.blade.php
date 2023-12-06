@@ -11,7 +11,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../index">Inicio</a>
+                            <a class="nav-link active" aria-current="page" href="{{ route('home') }}">Inicio</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="lugares" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -32,10 +32,10 @@
                     </ul>
 
                     <br><br>
-                    <div class="nav-item text-end">
+                    <!-- <div class="nav-item text-end">
                         <a class="btn btn-primary" href="{{ route('auth.login') }}" role="button">Iniciar n</a>
                         <a class="btn btn-primary" href="#" role="button">Registrarse</a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </nav>
@@ -43,7 +43,7 @@
 
     <div class="container-fluid">
         <div class="card bg-dark text-white">
-            <img src="../img/pexels-oziel-gómez-840667.jpg" class="card-img" alt="...">
+            <img src="../img/Chichen.jpg" class="card-img" alt="...">
             <div class="card-img-overlay d-flex flex-column align-items-center justify-content-center texint">
                 <h1 class="card-title">Explora por categorías</h5>
                     <p class="card-text"></p>
@@ -54,28 +54,21 @@
             <div class="container">
                 <div class="row">
                     <!-- Columna tarjetas -->
-                    <div class="col">
-                        <div class="row row-cols-4 justify-content-center">
-                            <a href="categorias/parque">
-                                <div class="card text-bg-dark" style="width: 18rem;">
-                                    <img src="{{ asset('img/fff.png') }}" class="card-img-top" alt="...">
-                                    <div class="card-img-overlay d-flex flex-column align-items-center justify-content-center texint">
-                                        <h5 class="card-title">Parques</h5>
+                    <section class="py-5">
+                        <div class="container">
+                            <div class="row">
+                                @foreach($posts as $categoria)
+                                    <div class="col-md-3 mb-3">
+                                        <div class="card">
+                                            <img src="{{ asset('img/fff.png') }}" alt="" class="card-img-top">
+                                            <h3>Precio = {{ $categoria->categoria }}</h3>
+                                         
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
-
-                            <a href="categorias/sitiosCulto">
-                                <div class="card text-bg-dark" style="width: 18rem;">
-                                    <img src="{{ asset('img/fff.png') }}" class="card-img-top" alt="...">
-                                    <div class="card-img-overlay d-flex flex-column align-items-center justify-content-center texint">
-                                        <h5 class="card-title">Sitios de culto</h5>
-                                    </div>
-                                </div>
-                            </a>
+                                @endforeach
+                            </div>
                         </div>
-                        <!-- Termina el acomodado de 3 columnas -->
-                    </div>
+                    </section>
                     <!-- Termina columna tarjetas -->
                 </div>
                 <!-- Termina fila -->
