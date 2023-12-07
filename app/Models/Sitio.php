@@ -17,4 +17,9 @@ class Sitio extends Model
     public function categoria(){
         return $this->hasMany(Categoria::class);
     }
+
+    public function direccion()
+    {
+        return $this->hasOne(Direccion::class, 'id_sitio1');
+    }
 }

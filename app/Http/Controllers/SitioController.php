@@ -19,9 +19,12 @@ class SitioController extends Controller
     }
 
     public function data(){
-        $post = Categoria::with ('categoria')->get();
+        // $post = Categoria::with ('categoria')->get();
+        // return view ('lugares.lugares',['post' => $post]);
 
-        return view ('lugares.lugares',['post' => $post]);
+        $sitios = Sitio::with('direccion')->get();
+
+        return view('lugares.lugares', ['sitios' => $sitios]);
 
         }
 }

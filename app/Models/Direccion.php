@@ -19,7 +19,8 @@ class Direccion extends Model
     public function estado(){
         return $this->hasMany(Estado::class);
     }
-    public function sitio(){
-        return $this->hasMany(Sitio::class);
+    public function sitio()
+    {
+        return $this->belongsTo(Sitio::class, 'id_sitio1');
     }
 }
