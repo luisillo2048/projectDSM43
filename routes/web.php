@@ -39,3 +39,13 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::middleware(['validar_rol'])->group(function(){
+    Route::get('pruebaadmin', function(){
+        dd('entra');
+    });
+});
+
+Route::get('error/403', function(){
+    return view('errors.403');
+});
