@@ -59,7 +59,7 @@
                                     <div class="col-md-3 mb-3">
                                         <div class="card">
                                             <img src="{{ asset('img/fff.png') }}" alt="" class="card-img-top">
-                                            <h3>Precio = {{ $categoria->municipio }}</h3>
+                                            <h3>{{ $categoria->municipio }}</h3>
                                          
                                         </div>
                                     </div>

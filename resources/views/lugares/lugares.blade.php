@@ -57,16 +57,18 @@
                 <section class="py-5">
                         <div class="container">
                             <div class="row">
-                                @foreach($posts as $categoria)
-                                    <div class="col-md-3 mb-3">
-                                        <div class="card">
-                                            <img src="{{ asset('img/fff.png') }}" alt="" class="card-img-top">
-                                            <h3>Precio = {{ $categoria->nombre }}</h3>
-                                           
-                                         
-                                        </div>
-                                    </div>
-                                @endforeach
+                              @foreach($posts as $categoria)
+                                  <div class="col-md-3 mb-3">
+                                      <div class="card">
+                                          <img src="{{ asset('img/fff.png') }}" alt="" class="card-img-top">
+                                          <div class="card-body">
+                                              <h5 class="card-title">{{ $categoria->nombre }}</h5>
+                                              <!-- <p class="card-text">{{ $categoria->direccion->calle }}, {{ $categoria->direccion->num }}, {{ $categoria->direccion->colonia }}</p> -->
+                                              <a href="#" class="btn btn-primary">Ver detalles</a>
+                                          </div>
+                                      </div>
+                                  </div>
+                              @endforeach
                             </div>
                         </div>
                     </section>
