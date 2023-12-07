@@ -43,9 +43,9 @@
 
   <div class="container-fluid">
     <div class="card bg-dark text-white">
-        <img src="../img/turista.avif" class="card-img" alt="...">
+        <img src="{{ asset('img/pexels-haley-black-2087391.jpg') }}" class="card-img" alt="...">
         <div class="card-img-overlay d-flex flex-column align-items-center justify-content-center texint">
-            <h1 class="card-title">Explora por municipio</h5>
+            <h1 class="card-title">Lugares destacados</h5>
         </div>
     </div>
 
@@ -63,6 +63,7 @@
                                           <img src="{{ asset('img/fff.png') }}" alt="" class="card-img-top">
                                           <div class="card-body">
                                               <h5 class="card-title">{{ $categoria->nombre }}</h5>
+                                              <p class="card-text">{{ $categoria->direccion->calle }}, {{ $categoria->direccion->num }}, {{ $categoria->direccion->colonia }}</p>
                                               <a href="#" class="btn btn-primary">Ver detalles</a>
                                           </div>
                                       </div>
