@@ -37,7 +37,6 @@
           <br><br>
           <div class="nav-item text-end">
             <a class="btn btn-primary" href="{{ route('auth.login') }}" role="button">Iniciar</a>
-            <a class="btn btn-primary" href="" role="button">Registrarse</a>
           </div>        
         </div>       
       </div>
