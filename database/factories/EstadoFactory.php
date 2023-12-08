@@ -18,7 +18,7 @@ class EstadoFactory extends Factory
     {
         return [
             //
-            'estado' => $this->faker->word,
+            'estado' => $this->faker->state,
         ];
     }
 }
