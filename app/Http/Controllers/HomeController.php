@@ -23,7 +23,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $horaMexico = obtenerHoraMexico();
-        return view('home', ['horaMexico' => $horaMexico]);
+        $zonasHorariasMexico = obtenerZonasHorariasMexico();
+        $horaActual = obtenerHoraEnZonaMexico();  // Puedes ajustar la zona horaria según tus necesidades
+        return view('home', ['zonasHorariasMexico' => $zonasHorariasMexico, 'horaActual' => $horaActual]);
     }
 }

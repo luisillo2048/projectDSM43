@@ -80,7 +80,11 @@
     </div>
 
     <div class="featured" id="ini">
-      <p>La hora actual en el centro de México es: {{ $horaMexico }}</p>
+      <h1>Hora actual en México</h1>
+      <p id="hora-actual">La hora actual en México es: {{ $horaActual }}</p>
+      @foreach ($zonasHorariasMexico as $zonaHoraria)
+        <li>{{ $zonaHoraria }}: {{ obtenerHoraEnZonaMexico($zonaHoraria) }}</li>
+      @endforeach
       <h3 class="texcentro">Aqui Podras Agregar Distintos Atributos </h3>
       <div class="d-flex justify-content-evenly" id="eleicons">
           <div>
@@ -159,4 +163,3 @@
 </body>
 </html>
 @endsection
-
