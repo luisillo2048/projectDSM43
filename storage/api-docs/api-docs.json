@@ -4,7 +4,7 @@
         "title": "API lugares ",
         "description": "Se mostraran diferentes acciones a relaizar",
         "contact": {
-            "name": "Yosimar Alejandro Gomez ",
+            "name": "Proyecto Laravel DSM-43",
             "email": "alexandrorick7@gmail.com"
         },
         "license": {
@@ -19,7 +19,7 @@
                 "tags": [
                     "Categoria"
                 ],
-                "operationId": "fb7dad2e0d06df3215f26d4f4b8999b4",
+                "operationId": "54041e5ffd6e9781c9dda732448fd714",
                 "responses": {
                     "200": {
                         "description": "mostrar todos los productos"
@@ -34,7 +34,7 @@
                     "Categoria"
                 ],
                 "summary": "Registrar la información de una categoria",
-                "operationId": "2d789ab21ff37b79639c39c8d2c63a3c",
+                "operationId": "43c58af583a704175bf719f0e8aa4a79",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -93,6 +93,343 @@
                 }
             }
         },
+        "/api/estado": {
+            "get": {
+                "tags": [
+                    "Estado"
+                ],
+                "operationId": "4520e0f7467924475dd68538359e7e69",
+                "responses": {
+                    "200": {
+                        "description": "mostrar todos los productos"
+                    },
+                    "default": {
+                        "description": "ha ocurrido un error."
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Estado"
+                ],
+                "summary": "Registrar la información de una estado",
+                "operationId": "7cfaab6e1a20618e19b0ee64bb73d7cc",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "estado": {
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "CREATED",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "id": {
+                                            "type": "number",
+                                            "example": 1
+                                        },
+                                        "estado": {
+                                            "type": "string",
+                                            "example": "Toluca"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "UNPROCESSABLE CONTENT",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "type": "string",
+                                            "example": "The apellidos field is required."
+                                        },
+                                        "errors": {
+                                            "type": "string",
+                                            "example": "Objeto de errores"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/municipio": {
+            "get": {
+                "tags": [
+                    "Municipio"
+                ],
+                "operationId": "a69c92c3afd9ed1eb205546b0741167e",
+                "responses": {
+                    "200": {
+                        "description": "mostrar todos los productos"
+                    },
+                    "default": {
+                        "description": "ha ocurrido un error."
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Municipio"
+                ],
+                "summary": "Registrar la información de una municipio",
+                "operationId": "b6f34f6b3c10cdaae94f32f7aa7d0545",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "municipio": {
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "CREATED",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "id": {
+                                            "type": "number",
+                                            "example": 1
+                                        },
+                                        "municipio": {
+                                            "type": "string",
+                                            "example": "Xona"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "UNPROCESSABLE CONTENT",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "type": "string",
+                                            "example": "The apellidos field is required."
+                                        },
+                                        "errors": {
+                                            "type": "string",
+                                            "example": "Objeto de errores"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/sitio": {
+            "get": {
+                "tags": [
+                    "Sitio"
+                ],
+                "operationId": "363171ed845113f46ddce3d007943bd2",
+                "responses": {
+                    "200": {
+                        "description": "mostrar todos los productos"
+                    },
+                    "default": {
+                        "description": "ha ocurrido un error."
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Sitio"
+                ],
+                "summary": "Registrar la información de una sitio",
+                "operationId": "80b4e9ec65c776e2d80c22b2a5ee9085",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "nombre": {
+                                        "type": "string"
+                                    },
+                                    "telefono": {
+                                        "type": "number"
+                                    },
+                                    "id_categoria1": {
+                                        "type": "number"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "CREATED",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "id": {
+                                            "type": "number",
+                                            "example": 1
+                                        },
+                                        "sitio": {
+                                            "type": "string",
+                                            "example": "Xona"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "UNPROCESSABLE CONTENT",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "type": "string",
+                                            "example": "The apellidos field is required."
+                                        },
+                                        "errors": {
+                                            "type": "string",
+                                            "example": "Objeto de errores"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/direccion": {
+            "get": {
+                "tags": [
+                    "Direccion"
+                ],
+                "operationId": "6a6bfb74e3043ce5527ea53d574869b1",
+                "responses": {
+                    "200": {
+                        "description": "mostrar todos los productos"
+                    },
+                    "default": {
+                        "description": "ha ocurrido un error."
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Direccion"
+                ],
+                "summary": "Registrar la información de una direccion",
+                "operationId": "f1c84362a3daf2b5305123cf9170a3fe",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "calle": {
+                                        "type": "string"
+                                    },
+                                    "num": {
+                                        "type": "number"
+                                    },
+                                    "colonia": {
+                                        "type": "string"
+                                    },
+                                    "id_municipio1": {
+                                        "type": "number"
+                                    },
+                                    "id_estado1": {
+                                        "type": "number"
+                                    },
+                                    "id_sitio1": {
+                                        "type": "number"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "CREATED",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "id": {
+                                            "type": "number",
+                                            "example": 1
+                                        },
+                                        "direccion": {
+                                            "type": "string",
+                                            "example": "Xona"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "UNPROCESSABLE CONTENT",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "type": "string",
+                                            "example": "The apellidos field is required."
+                                        },
+                                        "errors": {
+                                            "type": "string",
+                                            "example": "Objeto de errores"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/api/categoria/{id_categoria}": {
             "get": {
                 "tags": [
@@ -100,7 +437,7 @@
                 ],
                 "summary": "Obtener el producto por identificador",
                 "description": "Obtiene un producto especifico segun su identificador.",
-                "operationId": "cc72fa4d00b8d881d4e6c1f4b923d053",
+                "operationId": "86b3c54cf0c32812d743065de2375d81",
                 "parameters": [
                     {
                         "name": "id_categoria",
@@ -116,6 +453,537 @@
                 "responses": {
                     "200": {
                         "description": "Producto obtenido exitosamente."
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "Categoria"
+                ],
+                "summary": "Editar un producto por identificador",
+                "description": "Editar un producto existente",
+                "operationId": "bd9f7e4f5d9f914724927cbb4d66270f",
+                "parameters": [
+                    {
+                        "name": "id_categoria",
+                        "in": "path",
+                        "description": "Identificador único de producto",
+                        "required": true,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int64"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "categoria": {
+                                        "description": "categoria",
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Producto editado exitosamente"
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "Categoria"
+                ],
+                "summary": "Eliminar el producto por identificador",
+                "operationId": "1fc0b1b396a1c609263678bfc4aed4f8",
+                "parameters": [
+                    {
+                        "name": "id_categoria",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "NO CONTENT"
+                    },
+                    "200": {
+                        "description": "OPERATION SUCCEFUL",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Se pudo realizar correctamente la operación"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/estado/{id_estado}": {
+            "get": {
+                "tags": [
+                    "Estado"
+                ],
+                "summary": "Obtener el producto por identificador",
+                "description": "Obtiene un producto especifico segun su identificador.",
+                "operationId": "324150e07e7dd43720cd418df211a7f6",
+                "parameters": [
+                    {
+                        "name": "id_estado",
+                        "in": "path",
+                        "description": "Identificador unico del producto",
+                        "required": true,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int64"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Producto obtenido exitosamente."
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "Estado"
+                ],
+                "summary": "Editar un producto por identificador",
+                "description": "Editar un producto existente",
+                "operationId": "596f13b93032227b4ade7ea4f25c4d28",
+                "parameters": [
+                    {
+                        "name": "id_estado",
+                        "in": "path",
+                        "description": "Identificador único de producto",
+                        "required": true,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int64"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "estado": {
+                                        "description": "estado",
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Producto editado exitosamente"
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "Estado"
+                ],
+                "summary": "Eliminar el producto por identificador",
+                "operationId": "fb1c1e46cd61db9bba8dca58c92e0d31",
+                "parameters": [
+                    {
+                        "name": "id_estado",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "NO CONTENT"
+                    },
+                    "200": {
+                        "description": "OPERATION SUCCEFUL",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Se pudo realizar correctamente la operación"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/municipio/{id_municipio}": {
+            "get": {
+                "tags": [
+                    "Municipio"
+                ],
+                "summary": "Obtener el producto por identificador",
+                "description": "Obtiene un producto especifico segun su identificador.",
+                "operationId": "6fbcfe3c993ecfc48ee090383f3bda29",
+                "parameters": [
+                    {
+                        "name": "id_municipio",
+                        "in": "path",
+                        "description": "Identificador unico del producto",
+                        "required": true,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int64"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Producto obtenido exitosamente."
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "Municipio"
+                ],
+                "summary": "Editar un producto por identificador",
+                "description": "Editar un producto existente",
+                "operationId": "4f1cb29f6ef86dd4fce05f6b88f8f6a9",
+                "parameters": [
+                    {
+                        "name": "id_municipio",
+                        "in": "path",
+                        "description": "Identificador único de producto",
+                        "required": true,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int64"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "municipio": {
+                                        "description": "municipio",
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Producto editado exitosamente"
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "Municipio"
+                ],
+                "summary": "Eliminar el producto por identificador",
+                "operationId": "a230a9d46a776c6966946e4d6c4b94a6",
+                "parameters": [
+                    {
+                        "name": "id_municipio",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "NO CONTENT"
+                    },
+                    "200": {
+                        "description": "OPERATION SUCCEFUL",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Se pudo realizar correctamente la operación"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/sitio/{id_sitio}": {
+            "get": {
+                "tags": [
+                    "Sitio"
+                ],
+                "summary": "Obtener el producto por identificador",
+                "description": "Obtiene un producto especifico segun su identificador.",
+                "operationId": "3c9cfd5e3fe6f03dcc9396cde591d1c9",
+                "parameters": [
+                    {
+                        "name": "id_sitio",
+                        "in": "path",
+                        "description": "Identificador unico del producto",
+                        "required": true,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int64"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Producto obtenido exitosamente."
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "Sitio"
+                ],
+                "summary": "Editar un producto por identificador",
+                "description": "Editar un producto existente",
+                "operationId": "b674fc7b4700f521176539fb5cd9dd52",
+                "parameters": [
+                    {
+                        "name": "id_sitio",
+                        "in": "path",
+                        "description": "Identificador único de producto",
+                        "required": true,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int64"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "nombre": {
+                                        "description": "nombre",
+                                        "type": "string"
+                                    },
+                                    "telefono": {
+                                        "description": "telefono",
+                                        "type": "number"
+                                    },
+                                    "id_categoria1": {
+                                        "description": "id de la categoria",
+                                        "type": "number"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Producto editado exitosamente"
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "Sitio"
+                ],
+                "summary": "Eliminar el producto por identificador",
+                "operationId": "92b8f921b499210417322980fc047a2f",
+                "parameters": [
+                    {
+                        "name": "id_sitio",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "NO CONTENT"
+                    },
+                    "200": {
+                        "description": "OPERATION SUCCEFUL",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Se pudo realizar correctamente la operación"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/direccion/{id_direccion}": {
+            "get": {
+                "tags": [
+                    "Direccion"
+                ],
+                "summary": "Obtener el producto por identificador",
+                "description": "Obtiene un producto especifico segun su identificador.",
+                "operationId": "f7f84028b1ea755ec09bd438d9ee540f",
+                "parameters": [
+                    {
+                        "name": "id_direccion",
+                        "in": "path",
+                        "description": "Identificador unico del producto",
+                        "required": true,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int64"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Producto obtenido exitosamente."
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "Direccion"
+                ],
+                "summary": "Editar un producto por identificador",
+                "description": "Editar un producto existente",
+                "operationId": "414c712de39be657eeccc0b16bf249d8",
+                "parameters": [
+                    {
+                        "name": "id_direccion",
+                        "in": "path",
+                        "description": "Identificador único de producto",
+                        "required": true,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int64"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "calle": {
+                                        "description": "calle",
+                                        "type": "string"
+                                    },
+                                    "num": {
+                                        "description": "numero interior",
+                                        "type": "number"
+                                    },
+                                    "colonia": {
+                                        "description": "colonia",
+                                        "type": "string"
+                                    },
+                                    "id_municipio1": {
+                                        "description": "id de municipio",
+                                        "type": "number"
+                                    },
+                                    "id_estado1": {
+                                        "description": "id de estado",
+                                        "type": "number"
+                                    },
+                                    "id_sitio1": {
+                                        "description": "id de sitio",
+                                        "type": "number"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Producto editado exitosamente"
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "Direccion"
+                ],
+                "summary": "Eliminar el producto por identificador",
+                "operationId": "7e777d13d7b195b42efc6f4ff88230d7",
+                "parameters": [
+                    {
+                        "name": "id_direccion",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "NO CONTENT"
+                    },
+                    "200": {
+                        "description": "OPERATION SUCCEFUL",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Se pudo realizar correctamente la operación"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
                     }
                 }
             }
