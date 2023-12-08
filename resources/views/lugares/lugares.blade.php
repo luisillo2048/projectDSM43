@@ -64,6 +64,7 @@
                                           <div class="card-body">
                                               <h5 class="card-title">{{ $categoria->nombre }}</h5>
                                               <p class="card-text">{{ $categoria->direccion->calle }}, {{ $categoria->direccion->num }}, {{ $categoria->direccion->colonia }}</p>
+                                              <p class="card-text">{{ $categoria->direccion->municipio->municipio }}, {{ $categoria->direccion->estado->estado }}</p>
                                               <a href="#" class="btn btn-primary">Ver detalles</a>
                                           </div>
                                       </div>

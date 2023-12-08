@@ -13,11 +13,13 @@ class Direccion extends Model
     protected $fillable = ['calle', 'num', 'colonia', 'id_municipio1', 'id_estado1', 'id_sitio1'];
     protected $hidden =['created_at','updated_at'];
 
-    public function municipio(){
-        return $this->hasMany(municipio::class);
+    public function municipio()
+    {
+        return $this->belongsTo(Municipio::class, 'id_municipio1');
     }
-    public function estado(){
-        return $this->hasMany(Estado::class);
+    public function estado()
+    {
+        return $this->belongsTo(Estado::class, 'id_estado1');
     }
     public function sitio()
     {

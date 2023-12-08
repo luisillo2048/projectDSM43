@@ -10,7 +10,7 @@ class Municipio extends Model
     use HasFactory;
 
     protected $table = "municipio";
-    # protected $id = "id_categoria";
+    protected $primaryKey = "id_municipio";
     protected $fillable = ['municipio'];
     protected $hidden =['created_at','updated_at'];
 
