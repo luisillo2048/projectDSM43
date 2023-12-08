@@ -80,6 +80,7 @@
     </div>
 
     <div class="featured" id="ini">
+      <p>La hora actual en el centro de México es: {{ $horaMexico }}</p>
       <h3 class="texcentro">Aqui Podras Agregar Distintos Atributos </h3>
       <div class="d-flex justify-content-evenly" id="eleicons">
           <div>

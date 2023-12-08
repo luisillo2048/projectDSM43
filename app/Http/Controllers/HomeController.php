@@ -23,6 +23,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $horaMexico = obtenerHoraMexico();
+        return view('home', ['horaMexico' => $horaMexico]);
     }
 }
