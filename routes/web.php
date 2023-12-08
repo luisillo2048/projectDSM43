@@ -18,7 +18,6 @@ Route::get('/', function () {
     return view('index');
 });
 ///////////////////////Vistas///////////////////
-Route::get('lugares/index', [LugarController::class, 'index'])->name('lugares.index');
 Route::get('lugares/categorias', [LugarController::class, 'categorias'])->name('lugares.categorias');
 Route::get('lugares/municipios', [LugarController::class, 'municipios'])->name('lugares.municipios');
 Route::get('lugares/lugares', [LugarController::class, 'lugares'])->name('lugares.lugares');

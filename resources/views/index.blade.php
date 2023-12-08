@@ -4,7 +4,7 @@
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="nuevoLink">ILoveTraveling</a>
+        <a class="navbar-brand" href="#">ILoveTraveling</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -14,7 +14,7 @@
               <a class="nav-link active" aria-current="page" href="index">Inicio</a>
             </li> -->
             <!-- <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="lugares/index" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="lugares/lugares" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Lugares -->
             </a>
             <!--este apartado no se ocupa por q no es un avista principal si o el login-->
@@ -22,7 +22,7 @@
                 <li><a class="dropdown-item" href="lugares/categorias">Categorías</a></li>
                 <li><a class="dropdown-item" href="lugares/municipios">Municipios</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="lugares/index">Explorar sitios</a></li>
+                <li><a class="dropdown-item" href="lugares/lugares">Explorar sitios</a></li>
               </ul> -->
             </li>
             <li class="nav-item">
@@ -99,11 +99,11 @@
       </div>
 
       <div class="col mb-3">
-        <h5><a href="lugares/index" class="nav-link p-0 text-body-secondary">Lugares</a></h5>
+        <h5><a href="lugares/lugares" class="nav-link p-0 text-body-secondary">Lugares</a></h5>
         <ul class="nav flex-column">
           <li class="nav-item mb-2"><a href="lugares/categorias" class="nav-link p-0 text-body-secondary">Categorías</a></li>
           <li class="nav-item mb-2"><a href="lugares/municipios" class="nav-link p-0 text-body-secondary">Municipios</a></li>
-          <li class="nav-item mb-2"><a href="lugares/index" class="nav-link p-0 text-body-secondary">Explorar sitios</a></li>
+          <li class="nav-item mb-2"><a href="lugares/lugares" class="nav-link p-0 text-body-secondary">Explorar sitios</a></li>
         </ul>
       </div>
 

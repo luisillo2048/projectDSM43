@@ -36,7 +36,7 @@
             </li> 
           
              <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="lugares/index" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="lugares/lugares" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Lugares 
             </a>
               <ul class="dropdown-menu">
@@ -50,15 +50,9 @@
               <a class="nav-link" href="foo">Contacto</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index">Salir</a>
+              <a class="nav-link active" aria-current="page" href="lugares/lugares">Salir</a>
             </li> 
           </ul>
-        
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-primary" type="submit">Search</button>
-          </form> 
-          
 
           <br><br>
           <!-- <div class="nav-item text-end">
@@ -85,24 +79,12 @@
       @foreach ($zonasHorariasMexico as $zonaHoraria)
         <li>{{ $zonaHoraria }}: {{ obtenerHoraEnZonaMexico($zonaHoraria) }}</li>
       @endforeach
-      <h3 class="texcentro">Aqui Podras Agregar Distintos Atributos </h3>
+      <h3 class="texcentro">Aquí podrás agregar distintos atributos </h3>
       <div class="d-flex justify-content-evenly" id="eleicons">
           <div>
               <img class="iconsi" src="{{asset('img/icons/compass.png')}}" alt="">
 
               <p class="texcentro">Insertar</p>
-              <div class="dropdown">
-                    <a class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Selecciona una opción
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <!-- Opciones de la lista desplegable -->
-                    <a class="dropdown-item" href="#">Opción 1</a>
-                    <a class="dropdown-item" href="#">Opción 2</a>
-                    <a class="dropdown-item" href="#">Opción 3</a>
-                    </div>
-                </div>
-                </div>
                
           </div>
           <div>
@@ -145,11 +127,11 @@
       </div>
 
       <div class="col mb-3">
-        <h5><a href="lugares/index" class="nav-link p-0 text-body-secondary">Lugares</a></h5>
+        <h5><a href="lugares/lugares" class="nav-link p-0 text-body-secondary">Lugares</a></h5>
         <ul class="nav flex-column">
           <li class="nav-item mb-2"><a href="lugares/categorias" class="nav-link p-0 text-body-secondary">Categorías</a></li>
           <li class="nav-item mb-2"><a href="lugares/municipios" class="nav-link p-0 text-body-secondary">Municipios</a></li>
-          <li class="nav-item mb-2"><a href="lugares/index" class="nav-link p-0 text-body-secondary">Explorar sitios</a></li>
+          <li class="nav-item mb-2"><a href="lugares/lugares" class="nav-link p-0 text-body-secondary">Explorar sitios</a></li>
         </ul>
       </div>
 
